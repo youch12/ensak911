@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardElevation="1dp"
+    card_view:cardUseCompatPadding="true">
+
+    <FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical" android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/demande_view_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/archive_icon"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_archive_black_24dp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/delete_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_delete_black_24dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/demande_view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            >
+
+    <LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton android:src="@drawable/ic_assignment_black_24dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <TextView
+        android:layout_width="50dp" android:text="@string/title"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+    <TextView android:id="@+id/demande_titre"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+                android:src="@drawable/ic_date_range_black_24dp" />
+
+        <TextView
+                android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/demande_dateCreation"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_vector_name"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/status" />
+
+        <TextView
+            android:id="@+id/demande_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+             />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/demande_dateLivraison_linear_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_event_availabke_black" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/dateLivraison" />
+
+            <TextView
+                android:id="@+id/demande_dateLivraison"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                 />
+            </LinearLayout>
+            <LinearLayout android:gravity="end"  android:layout_margin="10dp"
+                android:id="@+id/send_receipt_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:id="@+id/send_receipt_button"
+                    android:text="@string/send_receopt_button_message" />
+            </LinearLayout>
+            <LinearLayout android:gravity="end" android:layout_margin="10dp"
+                android:id="@+id/respond_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:id="@+id/respond_button"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_respond_button_message" />
+            </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    </android.support.v7.widget.CardView>

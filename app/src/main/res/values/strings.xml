@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">ENSA 911</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="demande_status_false">En cours de traitement</string>
+    <string name="dateLivraison">Date de récupération</string>
+    <string name="date">Date</string>
+    <string name="status">Etat</string>
+    <string name="title">Titre</string>
+    <string name="title_modifier_emploi">Modifier emploi</string>
+    <string name="title_ajouter_demande">Ajouter demande</string>
+    <string name="text_date">Valide depuis : </string>
+    <string name="text_date_pub">Date de publication  </string>
+    <string name="Image">Image (Optionnelle)</string>
+    <string name="Text">Text (Optionnel)</string>
+    <string name="Date">Date</string>
+    <string name="Notes">Notes</string>
+    <string name="title_annonce_item">Ensak a publié</string>
+    <string name="selectionnezDate">Selectionnez la date</string>
+    <string name="add_demande_title">Ajouter une demande</string>
+    <string name="modify_schedule_title">Modifier Emploi</string>
+    <string name="connection_user_hint">N° Apogée/Matricule</string>
+    <string name="connection_password_hint">Mot de passe</string>
+    <string name="connection_button_message">Connexion</string>
+    <string name="add_demande_type">Type</string>
+    <string name="received_demands_list">Demandes recues</string>
+    <string name="send_receopt_button_message">Envoyer accusé de réception</string>
+    <string name="send_respond_button_message">Répondre</string>
+    <string name="emplois_list_title">Emplois</string>
+    <string name="save_emploi_button_message">Save emploi</string>
+    <string name="response_type">Type de réponse</string>
+    <string name="delivery_date">Date de récuprétaion</string>
+    <string name="sent_demands_list">Demandes envoyés</string>
+    <string name="teachers_list">Annuaire</string>
+    <string name="email">Email</string>
+    <string name="tel">Tel</string>
+    <string name="firstName">Prénom</string>
+    <string name="lastName">Nom</string>
+    <string name="deleted_demand">Demande supprimé</string>
+    <string name="archived_demand">Demande archivé</string>
+    <string name="undo">Annuler</string>
+    <string name="receipt_sent_message">Accusé de réception envoyé</string>
+    <string name="donwload_image_message">Image enregisté dans Gallery</string>
+    <string name="copied_to_clipboard">Copié dans le presse-papiers  </string>
+    <string name="teacher_details">Détails du prof</string>
+    <string name="space"> </string>
+    <string name="try_again">Essayer une autre foid</string>
+    <string-array name="annee">
+        <item>1 ère année</item>
+        <item>2 éme année</item>
+        <item>3 éme année</item>
+        <item>4 éme année</item>
+        <item>5 éme année</item>
+    </string-array>
+
+    <string-array name="option">
+        <item>Génie Informatique</item>
+        <item>Génie industriel</item>
+        <item>Génie électrique</item>
+        <item>Réseau de télécom</item>
+    </string-array>
+
+    <string-array name="demande">
+        <item>Demande 1</item>
+        <item>Demande 2</item>
+        <item>Demande 3</item>
+        <item>Demande 4</item>
+        <item>Demande 5</item>
+    </string-array>
+
+</resources>

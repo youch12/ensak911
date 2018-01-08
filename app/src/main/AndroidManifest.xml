@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ensak911">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".demandes.activities.SentDemandsListActivity"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity android:name=".demandes.activities.AddDemandeActivity"
+            android:parentActivityName=".demandes.activities.AddDemandeActivity"
+            android:theme="@style/MyMaterialThemeTitle.Base">
+        </activity>
+        <activity android:name=".teachers.activities.TeachersListActivity"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity android:name=".demandes.activities.ReceivedDemandsListActivity"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity android:name=".emplois_annonces.activities.AnnoncesListActivity"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+        <activity android:name=".emplois_annonces.activities.ModifiyScheduleActivity"
+            android:theme="@style/MyMaterialThemeTitle.Base">
+        </activity>
+        <activity android:name=".emplois_annonces.activities.EmploisListActivity"
+            android:theme="@style/MyMaterialTheme.Base"
+            >
+        </activity>
+        <activity
+            android:name=".ConnectionScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/NoAction" />
+        <activity
+            android:name=".SplachActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

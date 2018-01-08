@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.ensak911.ConnectionScreen">
+    <ImageView android:id="@+id/splashscreen" android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo911"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/user_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/connection_user_hint"
+        android:inputType="text"
+        android:backgroundTint="#4286f4"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_edittext"
+        android:layout_alignStart="@+id/user_edittext"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/connection_password_hint"
+        android:inputType="textPassword"
+        android:backgroundTint="#4286f4"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/password_edittext"
+        android:layout_alignLeft="@+id/password_edittext"
+        android:layout_alignRight="@+id/password_edittext"
+        android:layout_alignStart="@+id/password_edittext"
+        android:layout_below="@+id/password_edittext"
+        android:layout_marginTop="36dp"
+        android:background="#4286f4"
+        android:clickable="true"
+        android:text="@string/connection_button_message"
+        android:textColor="@color/white"
+        android:textColorLink="@android:color/background_light" />
+</RelativeLayout>

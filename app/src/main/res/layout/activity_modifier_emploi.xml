@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/list_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_view_list_black_24dp"
+            android:layout_gravity="left"
+            
+            />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_year"
+            android:layout_gravity="center"
+            android:entries="@array/annee"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/school_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_school_black_24dp"
+            android:layout_gravity="left"
+            />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_option"
+
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView android:layout_marginLeft="15dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_date"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_date_pub"
+            android:id="@+id/DatePub"
+            android:padding="14dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Image"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:gravity="start"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="right">
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_file_upload_black_24dp" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/textview"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Text"
+            android:textColor="@color/black"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+    <EditText android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/editText"
+        />
+        </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="right"
+        >
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:text="@string/save_emploi_button_message"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_emploi" />
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+
