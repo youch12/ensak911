@@ -16,7 +16,7 @@ Finally, the app also allows students to visualise on faculty members infos.
 
 ## Progress
 So far only the user interfaces with basic functionalities are done, in addition distant access of mockable data on the site
-**mockable.io", through the library **retrofit**. No real backend is implemented.
+**mockable.io**, through the library **retrofit**. No real backend is implemented.
 
 ## Notes
 For further infos and visualisation of the app architecture, check the source code.
